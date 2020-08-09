@@ -201,6 +201,12 @@
   height: 200px;
 }
 
+.dialog-image {
+  height: 300px;
+  width: 550px;
+  text-align: center;
+}
+
 /* Contacts Page */
 .contact-grid {
   background-color: rgba(0, 0, 0, 0.1);

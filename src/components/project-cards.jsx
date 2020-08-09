@@ -23,7 +23,8 @@ const cardStyles = makeStyles({
     height: 250,
   },
   content: {
-    height: 90,
+    height: 100,
+    paddingBottom: 100,
   },
 });
 
@@ -86,11 +87,7 @@ export default function ProjectCards(props) {
     <div>
       <Card className={classes.root} onClick={handleClickOpen}>
         <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={props.image}
-            title={props.title}
-          />
+          <CardMedia className={classes.media} image={props.image} />
           <CardContent className={classes.content}>
             <Typography gutterBottom variant="h5" component="h2">
               {props.projectTitle}
@@ -104,27 +101,20 @@ export default function ProjectCards(props) {
         open={open}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {props.title}
+          <h3>{props.projectTitle}</h3>
         </DialogTitle>
         <DialogContent dividers>
+          <img src={props.image} alt="Project Image" className="dialog-image" />
           <Typography gutterBottom>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
+            <h4>{props.projectType}</h4>
           </Typography>
           <Typography gutterBottom>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor.
+            <p>{props.projectPeriod}</p>
           </Typography>
-          <Typography gutterBottom>
-            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
-            dui. Donec ullamcorper nulla non metus auctor fringilla.
-          </Typography>
+          <Typography gutterBottom>{props.projectDescription}</Typography>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus href="#text-buttons" color="primary">
+          <Button autoFocus href={props.projectUrl} color="primary">
             See Project
           </Button>
         </DialogActions>
