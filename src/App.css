@@ -1,0 +1,275 @@
+/* Navbar */
+.navbar {
+  padding: 1em;
+  width: 100%;
+}
+
+.nav-links {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  color: grey;
+  font-family: "Candara", sans-serif;
+  padding: 1em;
+}
+
+.navbar button:hover {
+  color: white;
+  outline: none;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+.nav-brand {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+}
+
+/* Main */
+.main-body {
+  background: #c8dfe7;
+}
+
+/* Landing Page */
+.landing-grid {
+  text-align: center;
+}
+
+.avatar-img {
+  height: 325px;
+  padding-top: 5em;
+}
+
+.banner-text {
+  width: 75%;
+  margin: auto;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.banner-text h4 {
+  font-size: 25px;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.banner-text hr {
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.banner-text i {
+  color: #505160;
+  padding: 8px;
+}
+
+/* About Me Page */
+.aboutme-text {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 1em;
+}
+
+.aboutme-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.aboutme-text p {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+.aboutme-text hr {
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
+/* Skills Page */
+.skills-body {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.skills-body h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.skills-body p {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.skills-body hr {
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
+/* Resume Page */
+.resume-body {
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.resume-body h1 {
+  color: white;
+  text-align: center;
+}
+
+.resume-body hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.resume-body h2 {
+  color: white;
+  text-align: left;
+}
+
+.resume-information {
+  color: white;
+  text-align: left;
+}
+
+/* Projects Page */
+.projects-body {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.projects-body h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.projects-body hr {
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
+.projects-body p {
+  line-height: 10px;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+}
+,
+.projects-body Card.Img {
+  height: 200px;
+}
+
+/* Contacts Page */
+.contact-grid {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-grid h2 {
+  text-align: center;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.contact-grid hr {
+  text-align: center;
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
+.contact-grid p {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+
+.contact-list {
+  margin-left: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+  width: 60%;
+}
+
+.contact-list i {
+  color: #505160;
+  font-size: 25px;
+  padding-right: 5rem;
+}
+
+.contact-list a {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.contact-list a:hover {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  text-decoration: none;
+}
+
+.contact-content {
+  color: #505160;
+  font-family: "Candara", sans-serif;
+  font-size: 20px;
+  padding: 0.5em;
+}
+
+.social-links {
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+
+.social-links a {
+  color: #505160;
+  padding: 5mm;
+}
