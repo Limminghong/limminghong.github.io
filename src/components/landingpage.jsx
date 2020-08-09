@@ -20,7 +20,7 @@ class LandingPage extends Component {
             <h4>Computer Engineering Student</h4>
             <h4>National University of Singapore</h4>
             <Button
-              href="Resume_LIM_MING_HONG.pdf"
+              href="Ming_Hong_LIM_CV.pdf"
               variant="outline-primary"
               download
             >

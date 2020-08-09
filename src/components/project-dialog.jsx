@@ -1,12 +1,5 @@
-import React, { Component } from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import React from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Typography from "@material-ui/core/Typography";
-import ButtonBase from "@material-ui/core/ButtonBase";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
@@ -14,18 +7,7 @@ import MuiDialogContent from "@material-ui/core/DialogContent";
 import MuiDialogActions from "@material-ui/core/DialogActions";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-
-const cardStyles = makeStyles({
-  root: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 250,
-  },
-  content: {
-    height: 90,
-  },
-});
+import Typography from "@material-ui/core/Typography";
 
 const styles = (theme) => ({
   root: {
@@ -71,40 +53,14 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function ProjectCards(props) {
-  const classes = cardStyles();
+export default function ProjectDialog(props) {
   const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div>
-      <Card className={classes.root} onClick={handleClickOpen}>
-        <CardActionArea>
-          <CardMedia
-            className={classes.media}
-            image={props.image}
-            title={props.title}
-          />
-          <CardContent className={classes.content}>
-            <Typography gutterBottom variant="h5" component="h2">
-              {props.projectTitle}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-      <Dialog
-        onClose={handleClose}
-        aria-labelledby="customized-dialog-title"
-        open={open}
-      >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          {props.title}
+      <Dialog aria-labelledby="customized-dialog-title">
+        <DialogTitle id="customized-dialog-title" onClose={props.handleClose}>
+          Modal title
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
@@ -124,8 +80,8 @@ export default function ProjectCards(props) {
           </Typography>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus href="#text-buttons" color="primary">
-            See Project
+          <Button autoFocus onClick={props.handleClose} color="primary">
+            Save changes
           </Button>
         </DialogActions>
       </Dialog>
