@@ -111,61 +111,14 @@
   margin: auto;
 }
 
-/* Skills Page */
-.skills-body {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  margin: auto;
+.social-links {
+  font-size: 30px;
+  margin-bottom: 1em;
 }
 
-.skills-body h1 {
-  font-size: 40px;
-  font-weight: bold;
+.social-links a {
   color: #505160;
-  font-family: "Candara", sans-serif;
-}
-
-.skills-body p {
-  color: #505160;
-  font-family: "Candara", sans-serif;
-  font-size: 20px;
-  padding: 1em;
-}
-
-.skills-body hr {
-  border-top: 3px dotted #505160;
-  width: 40%;
-  margin: auto;
-}
-
-/* Resume Page */
-.resume-body {
-  background-color: rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  margin: auto;
-}
-
-.resume-body h1 {
-  color: white;
-  text-align: center;
-}
-
-.resume-body hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
-}
-
-.resume-body h2 {
-  color: white;
-  text-align: left;
-}
-
-.resume-information {
-  color: white;
-  text-align: left;
+  padding: 5mm;
 }
 
 /* Projects Page */
@@ -205,77 +158,4 @@
   height: 300px;
   width: 550px;
   text-align: center;
-}
-
-/* Contacts Page */
-.contact-grid {
-  background-color: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-.contact-grid h2 {
-  text-align: center;
-  color: #505160;
-  font-family: "Candara", sans-serif;
-}
-
-.contact-grid hr {
-  text-align: center;
-  border-top: 3px dotted #505160;
-  width: 40%;
-  margin: auto;
-}
-
-.contact-grid p {
-  color: #505160;
-  font-family: "Candara", sans-serif;
-  font-size: 20px;
-  padding: 1em;
-  width: 90%;
-  margin: auto;
-  text-align: left;
-}
-
-.contact-list {
-  margin-left: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align: left;
-  width: 60%;
-}
-
-.contact-list i {
-  color: #505160;
-  font-size: 25px;
-  padding-right: 5rem;
-}
-
-.contact-list a {
-  color: #505160;
-  font-family: "Candara", sans-serif;
-}
-
-.contact-list a:hover {
-  color: #505160;
-  font-family: "Candara", sans-serif;
-  text-decoration: none;
-}
-
-.contact-content {
-  color: #505160;
-  font-family: "Candara", sans-serif;
-  font-size: 20px;
-  padding: 0.5em;
-}
-
-.social-links {
-  font-size: 30px;
-  margin-bottom: 1em;
-}
-
-.social-links a {
-  color: #505160;
-  padding: 5mm;
 }
