@@ -144,7 +144,7 @@
 }
 
 .dialog-image {
-  height: 300px;
-  width: 550px;
+  max-height: 300px;
+  max-width: 550px;
   text-align: center;
 }
