@@ -72,6 +72,23 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
+function ButtonExist(props) {
+  const haveButton = props.haveButton;
+  if (haveButton == "true") {
+    return (
+      <Button autoFocus href={props.projectUrl} color="primary">
+        See Project
+      </Button>
+    );
+  } else {
+    return (
+      <Button autoFocus disabled>
+        See Project
+      </Button>
+    );
+  }
+}
+
 export default function ProjectCards(props) {
   const classes = cardStyles();
   const [open, setOpen] = React.useState(false);
@@ -114,9 +131,10 @@ export default function ProjectCards(props) {
           <Typography gutterBottom>{props.projectDescription}</Typography>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus href={props.projectUrl} color="primary">
-            See Project
-          </Button>
+          <ButtonExist
+            haveButton={props.haveButton}
+            projectUrl={props.projectUrl}
+          />
         </DialogActions>
       </Dialog>
     </div>
