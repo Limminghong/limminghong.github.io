@@ -7,8 +7,11 @@ import ProjectCards from "./project-cards";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+  grid: {
+    padding: 10,
   },
 }));
 
@@ -20,7 +23,13 @@ export default function Projects() {
       <h1>Projects</h1>
       <hr />
       <div className={classes.root}>
-        <Grid container justify="center" alignItems="center" spacing={0}>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          className={classes.grid}
+          spacing={2}
+        >
           <Grid item xs={12} md={3} align="center">
             <ProjectCards
               image="assets/images/insincere-banner.png"
@@ -55,7 +64,13 @@ export default function Projects() {
             />
           </Grid>
         </Grid>
-        <Grid container justify="center" alignItems="center" spacing={0}>
+        <Grid
+          container
+          justify="center"
+          alignItems="center"
+          className={classes.grid}
+          spacing={2}
+        >
           <Grid item xs={12} md={3} align="center">
             <ProjectCards
               image="assets/images/portfolio-banner.png"
