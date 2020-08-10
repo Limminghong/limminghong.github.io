@@ -21,7 +21,7 @@ export default function Projects() {
       <hr />
       <div className={classes.root}>
         <Grid container justify="center" alignItems="center" spacing={0}>
-          <Grid item xs={3} align="center">
+          <Grid item xs={12} md={3} align="center">
             <ProjectCards
               image="assets/images/insincere-banner.png"
               projectTitle="Quora Insincere Questions Classification"
@@ -31,7 +31,7 @@ export default function Projects() {
               projectUrl="https://isteps.comp.nus.edu.sg/event/15th-steps/module/CS3244/project/4"
             />
           </Grid>
-          <Grid item xs={3} align="center">
+          <Grid item xs={12} md={3} align="center">
             <ProjectCards
               image="assets/images/corppro-banner.png"
               projectTitle="CorpPro"
@@ -41,7 +41,7 @@ export default function Projects() {
               projectUrl="https://github.com/CS2113-AY1819S1-W12-3/main"
             />
           </Grid>
-          <Grid item xs={3} align="center">
+          <Grid item xs={12} md={3} align="center">
             <ProjectCards
               image="assets/images/studylah-banner.jpeg"
               projectTitle="StudyLah"
