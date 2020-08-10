@@ -17,7 +17,7 @@ import CloseIcon from "@material-ui/icons/Close";
 
 const cardStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 300,
   },
   media: {
     height: 250,

@@ -126,6 +126,7 @@
   text-align: center;
   width: 100%;
   margin: auto;
+  justify-content: center;
 }
 
 .projects-body h1 {
@@ -140,18 +141,6 @@
   border-top: 3px dotted #505160;
   width: 40%;
   margin: auto;
-}
-
-.projects-body p {
-  line-height: 10px;
-  color: #505160;
-  font-family: "Candara", sans-serif;
-  font-size: 20px;
-  padding: 1em;
-}
-,
-.projects-body Card.Img {
-  height: 200px;
 }
 
 .dialog-image {
