@@ -52,6 +52,40 @@ export default function Projects() {
             />
           </Grid>
         </Grid>
+        <Grid container justify="center" alignItems="center" spacing={0}>
+          <Grid item xs={12} md={3} align="center">
+            <ProjectCards
+              image="assets/images/portfolio-banner.png"
+              projectTitle="Ming Hong's Portfolio"
+              projectType="Personal Website"
+              projectPeriod="Aug 2019 - Present"
+              projectDescription="My personal portfolio website :) You are looking at it now!"
+              projectUrl="https://github.com/Limminghong/limminghong.github.io"
+            />
+          </Grid>
+          <Grid item xs={12} md={3} align="center">
+            <ProjectCards
+              image="assets/images/activeaid-banner.png"
+              projectTitle="Active Aid"
+              projectType="IoT / Wearable Device"
+              projectPeriod="Aug 2019 - Nov 2019"
+              projectDescription="Knowing one’s level of exertion can prevent many injuries related to overexertion, as well as
+              have a more satisfying workout. Our project aims to design an end-to-end Internet of Things
+              (IoT) wearable device that can help users determine whether they are within a healthy range of
+              physical exertion, and also determine if they are not hitting a high enough intensity to reach their
+              fitness goals, should they have any."
+            />
+          </Grid>
+          <Grid item xs={12} md={3} align="center">
+            <ProjectCards
+              image="assets/images/vincent-banner.png"
+              projectTitle="Vincent Search and Rescue Robot"
+              projectType="Autonomous Search and Rescue Robot"
+              projectPeriod="Feb 2018 - Apr 2018"
+              projectDescription="Vincent is a search and rescue robot designed to navigate through post-disaster locations that are otherwise too difficult or too dangerous for humans to traverse. Using sensors to detect its surroundings, Vincent can provide information to its user and the rescue team about the current immediate environment. Using this knowledge, the rescue team can then command Vincent to move in specified directions to search for victims."
+            />
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
