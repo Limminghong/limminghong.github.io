@@ -36,6 +36,18 @@ class NavBar extends Component {
           <button className="nav-links">
             <Link
               activeClass="active"
+              to="experiences"
+              spy={true}
+              smooth={true}
+              offset={-90}
+              duration={500}
+            >
+              Experiences
+            </Link>
+          </button>
+          <button className="nav-links">
+            <Link
+              activeClass="active"
               to="projects"
               spy={true}
               smooth={true}

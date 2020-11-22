@@ -3,6 +3,7 @@ import { Grid } from "react-mdl";
 
 import LandingPage from "./landingpage";
 import AboutMe from "./aboutme";
+import Experiences from "./experiences";
 import Projects from "./projects";
 
 class Main extends Component {
@@ -12,6 +13,7 @@ class Main extends Component {
         <Grid>
           <LandingPage />
           <AboutMe />
+          <Experiences />
           <Projects />
         </Grid>
       </div>

@@ -121,6 +121,28 @@
   padding: 5mm;
 }
 
+/* Experiences Page */
+.experiences-body {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.experiences-body h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #505160;
+  font-family: "Candara", sans-serif;
+}
+
+.experiences-body hr {
+  border-top: 3px dotted #505160;
+  width: 40%;
+  margin: auto;
+}
+
 /* Projects Page */
 .projects-body {
   text-align: center;
