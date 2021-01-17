@@ -13,7 +13,7 @@ class Main extends Component {
         <Grid>
           <LandingPage />
           <AboutMe />
-          <Experiences />
+          {/* <Experiences /> */}
           <Projects />
         </Grid>
       </div>
